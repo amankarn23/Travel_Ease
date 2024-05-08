@@ -1,0 +1,35 @@
+.train-class-hidden{
+    position: absolute;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+    border-radius: 0.3rem;
+    top: 2.4rem;
+    padding: 16px 0;
+    background-color: #fff;
+    min-width: 160px;
+    width: 100%;
+    max-width: 200px;
+    z-index: 1;
+    height: 200px;
+    overflow-y: scroll;
+    >ul{
+        >li{
+            padding: 0.5rem 1rem;
+            &:hover{
+                cursor: pointer;
+                background-color: rgb(236, 236, 236);
+            }
+        }
+    }
+    &::-webkit-scrollbar{
+        width: 5px;
+        height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #d3d0d0;
+        border-radius: 10px;
+    }
+}
+.train-class-hidden-search{
+    left: 0;
+    top: 1.6rem;
+}

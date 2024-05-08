@@ -1,0 +1,285 @@
+.mainContent-container-wrapper{
+    width: 100%;
+}
+.mainContent-container{
+    background-color: white;
+    margin-top: 28px;
+    border-radius: 12px;
+    padding: 65px 30px 0px 30px;
+    width: 1200px;
+    min-height: 200px;
+    /* flex-grow: 1; */
+}
+.checkbox-ticket-active{
+    background: #eaf5ff;
+    border-radius: 20px;
+    
+}
+/* .flight-booking-details{
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    border: 1px solid #e7e7e7;
+    z-index: 5 !important;
+}
+.searchFromCity{
+    width: 300px;
+    height: 112px;
+    border-right: solid 1px #e7e7e7;
+}
+.flight-inputBox{
+    height: 112px;
+    border-radius: 0;
+    margin-right: 0;
+    transition: all 0.2s linear;
+}
+.flight-inputBox:hover{
+    background: #eaf5ff;
+}
+.flight-inputBox label{
+    padding: 10px 19px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.label-input{
+    text-transform: capitalize;
+}
+.flight-inputBox input{
+    font-family: 'Mukta', 'Lato', sans-serif;
+}
+.flight-inputField{
+    border: 0;
+    outline: 0;
+    background: none;
+    min-width: 140px;
+    max-height: 36px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.airPortName{
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block; 
+}
+p[title]:hover:after {
+    content: attr(title);
+    width: 220px;
+    position: absolute;
+    top: 21px;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+    background-color: #eaf5ff;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 10px;
+    
+} */
+.flightSwapCircle{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-left: -22px;
+    border-radius: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    cursor: pointer;
+}
+.flightsSprite{
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/landingSprite@21x.webp);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 200px 650px;
+    font-size: 0px;
+    flex-shrink: 0;
+}
+.flightSwapIcon{
+    width: 15px;
+    height: 11px;
+    background-position: -149px -111px;
+}
+.searchToCity{
+    width: 300px;
+    height: 112px;
+    border-right: solid 1px #e7e7e7;
+    padding-left: 20px;
+    margin-left: -18px;
+}
+.flight-booking-details .dates{
+    width: 158px;
+    height: 112px;
+    border-right: solid 1px #e7e7e7;
+}
+.flight-booking-details .dates .label-input::after, .flight-booking-details .flightTravellers .label-input::after {
+    border: solid #008cff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    content: '';
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    vertical-align: top;
+    margin: 3px 0 0 8px;
+    transition: all 0.3s ease-in-out;
+}
+.shortYear::before {
+    content: "'";
+}
+.flightTravellers{
+    width: 214px;
+    border-radius: 0 10px 10px 0;
+}
+.selectFareText {
+    line-height: 14px !important;
+}
+.specialFareNew {
+    display: flex;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+.specialFareNew li.activeItem {
+    background: #eaf5ff;
+}
+.specialFareNew li:first-of-type {
+    border-left: none;
+    border-radius: 4px 0 0 4px;
+}
+.specialFareNew li {
+    position: relative;
+    padding: 8px 8px 8px 26px;
+    cursor: pointer;
+    font-size: calc(var(--font-scale, 1) * 12px);
+    color: #4a4a4a;
+    border-left: solid 1px #fff;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    min-width: 80px;
+    max-width: 134px;
+    line-height: 14px !important;
+}
+.specialFareNew li::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: solid 1px #9b9b9b;
+    display: flex;
+    flex-shrink: 0;
+    position: absolute;
+    left: 8px;
+}
+.specialFareNew li.activeItem::before {
+    background: #008cff;
+    border-color: #008cff;
+}
+.specialFareNew li.activeItem::after {
+    content: '';
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 7px;
+    width: 4px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    position: absolute;
+    left: 12px;
+}
+.specialFareNew .specialFareTooltip {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 241px;
+    padding: 10px;
+    text-transform: none;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    background-color: #249995;
+    display: none;
+    border-radius: 4px;
+    font-weight: normal;
+}
+.specialFareNew li:hover .specialFareTooltip {
+    display: block;
+}
+.specialFareTooltip::after {
+    bottom: 100%;
+    left: 40px;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(36, 153, 149, 0);
+    border-bottom-color: #249995;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.specialFareTooltip p {
+    line-height: 14px !important;
+}
+.fltRecentSearches li{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    background: #f2f2f2;
+}
+.fltBlueOnewayArrowIcon {
+    background-position: -48px -495px;
+    width: 10px;
+    height: 8px;
+}
+.primaryBtn {
+    border-radius: 34px;
+    background-image: var(--color-btn-primary-bg,linear-gradient(93deg,#53b2fe,#065af3));
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    flex-shrink: 0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    text-align: center;
+}
+.widgetSearchBtn {
+    width: 216px;
+    padding: 10px;
+    margin-bottom: -32px;
+    opacity: 1;
+}
+
+@media only screen and (max-width:940px) {
+    .flightSwapCircle{
+        top: 100%;
+        left: 50%;
+    }
+    .flightSwapIcon{
+        transform: rotate(90deg);
+    }
+    .flight-booking-fare{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .recentSearchGrid{
+        margin: 0;
+    }
+}

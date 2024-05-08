@@ -1,0 +1,243 @@
+
+.mytrips-main-container{
+    position: relative;
+    height: 100vh;
+    background-color: #ececec;
+}
+.mytrips-background-style{
+    position: absolute;
+    background-image: linear-gradient(261deg,#7dbfcc,#5ee7cd);
+    height: 240px;
+    width: 100%;
+    box-shadow: inset 0 4px 4px 1px rgba(0, 0, 0, 0.1);
+    >div{
+        
+        >span{
+            position: relative;
+            top: 2rem;
+            left: 2rem;
+            font-weight: 500;
+            color: rgb(60, 60, 60);
+        }
+    }
+}
+.mytrips-background-style-completed{
+    background-image: linear-gradient(262deg,#afb3ba,#cfcfcf);
+}
+.mytrips-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 20%;
+}
+.mytrips-history-container{
+    width: 60%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 520px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 6px 1px rgb(202, 202, 202);
+    &::-webkit-scrollbar{
+        width: 5px;
+        height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #d3d0d0;
+        border-radius: 10px;
+    }
+}
+
+.heading-container{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    /* border-bottom: 1px solid grey; */
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.1);
+}
+.heading{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 49px;
+    >span:last-child{
+        font-weight: 500;
+        font-size: 18px;
+        padding-left: 0.5rem;
+        color: rgb(148, 148, 148);
+    }
+}
+.upcomingIcon{
+    width: 27px;
+    height: 27px;
+    background-position: -2px -3px;
+    background-image: url(https://imgak.mmtcdn.com/mima/images/Desktop/mytripSprite.png);
+    background-size: 700px 850px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.upcomingIcon-active{
+    background-position: -2px -30px;
+}
+.completedIcon{
+    width: 27px;
+    height: 27px;
+    background-position: -68px -4px;
+    background-image: url(https://imgak.mmtcdn.com/mima/images/Desktop/mytripSprite.png);
+    background-size: 700px 850px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.completedIcon-active{
+    background-position: -68px -33px;
+}
+.myTrips{
+    padding: 1.5rem;
+}
+.myTrips-empty{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    >div:last-child{
+        display: flex;
+        flex-direction: column;
+        >p:first-child{
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(76, 76, 76);
+        }
+        >p:nth-child(2){
+            margin-top: 0.6rem;
+            font-size: 13px;
+        }
+        >a{
+            margin-top: 1rem;
+            >button{
+                border: none;
+                background-color: inherit;
+                color: #fff;
+                background-image: linear-gradient(93deg,#53b2fe,#065af3);
+                padding: 0.5rem 2rem;
+                font-weight: 600;
+                border-radius: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.bookings{
+    margin: 0.5rem 0;
+    display: flex;
+    /* background-color: rgb(229, 229, 229); */
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    &:hover{
+        scale: 1.01;
+    }
+}
+.item-flight{
+    background-color: #b8d0fc;
+    &:hover{
+        box-shadow: 0px 0px 6px 1px #0b5df6;
+    }
+}
+.item-train{
+    background-color: #eaf1c9;
+    &:hover{
+        box-shadow: 0px 0px 6px 1px #f0e10d;
+    }
+}
+.item-hotel{
+    background-color: #c3f8c5;
+    &:hover{
+        box-shadow: 0px 0px 6px 1px rgb(19, 238, 11);
+    }
+}
+.bookings-flightIcon{
+    display: inline-block;
+    background-position: -5px -44px;
+    height: 32px;
+    width: 42px;
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png)!important;
+    background-repeat: no-repeat;
+    background-size: 260px 400px;
+}
+.bookings-hotelIcon{
+    display: inline-block;
+    height: 40px;
+    width: 36px;
+    background-position: -62px -41.5px;
+    background-size: 260px 400px;
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png)!important;
+    background-repeat: no-repeat;
+}
+.bookings-trainIcon{
+    display: inline-block;
+    height: 37px;
+    width: 47px;
+    background-position: -156px -41px;
+    background-size: 260px 400px;
+    background-image: url(//imgak.mmtcdn.com/pwa_v3/pwa_commons_assets/desktop/B2CHeaderSprite.png)!important;
+    background-repeat: no-repeat;
+}
+.light-color-text{
+    color: #454545;
+}
+.booking-icon-container{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    >span{
+        font-weight: 500;
+        color: #454545;
+    }
+}
+
+@media only screen and (max-width: 1090px){
+    .mytrips-history-container{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 830px){
+    .mytrips-container{
+        padding: 0 1rem;
+    }
+    .mytrips-history-container{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 660px){
+    .bookings {
+       
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        
+        >div:first-child{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+}
+@media only screen and (max-width: 590px){
+    .bookings {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .myTrips-empty{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,75 @@
+.passanger-hidden-div {
+  box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 2.4rem;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+  background: white;
+  width: 300px;
+}
+.passanger-hidden-div-search{
+  top: 1.6rem;
+  left: 0;
+}
+.passanger-text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.passanger-inc-dec-button {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100px;
+  height: 40px;
+  font-size: large;
+  >svg{
+      cursor: pointer;
+  }
+}
+
+.passanger-div-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.passanger-div-section {
+  flex-wrap: wrap;
+}
+
+.main-icons {
+  width: 20px;
+  height: 20px;
+  font-size: large;
+}
+
+.class-buttons {
+  border: 1px solid #E6E6E6;
+  padding: 10px 0.1rem;
+  margin-bottom: 0.5rem;
+  width: 120px;
+  border-radius: 15px;
+  font-size: small;
+  text-align: center;
+  cursor: pointer;
+}
+
+.selected-flight-class-button {
+  background-color: #EFF5FD;
+  color: #3366CB;
+  border-color: #5B84D6;
+}
+@media only screen and (max-width: 940px){
+  .passanger-hidden-div{
+      left: 0;
+  }
+}

@@ -1,0 +1,77 @@
+.flight-location-modal{
+    position: absolute;
+    top: 2.4rem;
+    
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+    border-radius: 0.3rem;
+    max-width: 300px;
+    z-index: 4;
+    height: 200px;
+    overflow-y: scroll;
+    >div{
+        display: flex;
+        padding: 0.4rem;
+        padding-left: 1rem;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        >img{
+           width: 20px; 
+           height: 20px;
+           scale: 2;
+        }
+        >input{
+            width: 100%;
+            line-height: 24px;
+            font-size: 16px;
+            padding-left: 8px;
+            text-transform: capitalize;
+            border: none;
+            outline: none;
+        }
+        border-bottom: 1px solid rgb(222, 221, 221);
+    }
+    >ul li{
+        padding: 0.4rem 0;
+        padding-left: 1rem;
+        >div:first-child{
+            width: 18%;
+            float: left;
+            >span{
+                background-color: #034a85;
+                color: #fff;
+                padding:0 0.3rem;
+                font-size: 14px;
+                border-radius: 0.3rem;
+                text-align: center;
+                margin-right: 1rem;
+            }
+        }
+        >div:last-child{
+            margin-left: 3.2rem;
+            >span{
+                text-transform: capitalize;
+            }
+        }
+        &:hover{
+            cursor: pointer;
+            background-color: aliceblue;
+        }
+    }
+    &::-webkit-scrollbar{
+        width: 5px;
+        height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #d3d0d0;
+        border-radius: 10px;
+    }
+}
+.flight-search-location-modal{
+    top: 1.6rem;
+    left: 0;
+    /* width: 250px; */
+}

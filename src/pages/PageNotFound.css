@@ -1,0 +1,155 @@
+.abc{
+    /* margin: -1rem; */
+    margin-right: -1.8rem;
+    margin-left: -1.8rem;
+    margin-bottom: 1.8rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.nb {
+    height: 0px;
+  }
+  .qw {
+    min-height: 896px;
+  }
+  .ab {
+    position: relative;
+  }
+  .alo {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+  .ec {
+    isolation: isolate;
+  }
+  .rb {
+    min-height: 100%;
+  }
+  .aa {
+    position: absolute;
+  }
+ 
+  .ak {
+    inset: 0px;
+  }
+  .ed {
+    z-index: -10;
+  }
+  .ph {
+    height: 100%;
+  }
+  .aqj {
+    -o-object-position: top;
+    object-position: top;
+  }
+  
+  .aqe {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .tn {
+    width: 100%;
+  }
+  
+  
+  .avl {
+    text-align: center;
+  }
+  .ark {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .asb {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .ua {
+    max-width: 80rem;
+  }
+  .gx {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .avy {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .bah {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  
+  .awr {
+    line-height: 2rem;
+  }
+  .awg {
+    font-weight: 600;
+  }
+  .lh {
+    margin-top: 1rem;
+  }
+  .avs {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  .awd {
+    font-weight: 700;
+  }
+  .awx {
+    letter-spacing: -0.025em;
+  }
+  .bah {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  .lh {
+    margin-top: 1rem;
+  }
+  .avy {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .baj {
+    color: rgb(255 255 255 / 0.7);
+  }
+  .ze {
+    justify-content: center;
+  }
+  
+  .lx {
+    display: flex;
+  }
+  .kw {
+    margin-top: 2.5rem;
+  }
+ 
+  .awa {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .awq {
+    line-height: 1.75rem;
+  }
+  
+  @media (min-width: 640px){
+    .cfo {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+    .chy {
+      font-size: 3rem;
+      line-height: 1;
+    }
+    .bxl {
+      margin-top: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px){
+    
+    .ddh {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
